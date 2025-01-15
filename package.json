@@ -10,9 +10,8 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "5.8.0",
-    "@strapi/plugin-users-permissions": "5.8.0",
-    "@strapi/strapi": "5.8.0",
+    "@strapi/plugin-users-permissions": "5.6.0",
+    "@strapi/strapi": "5.6.0",
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "7.4.6",
     "pg": "^8.13.1",
