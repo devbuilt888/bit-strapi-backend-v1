@@ -12,7 +12,7 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.3.6",
     "@strapi/plugin-users-permissions": "4.3.6",
-    "@strapi/strapi": "4.3.6",
+    "@strapi/strapi": "5.8.0",
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "7.4.6",
     "pg": "^8.13.1",
