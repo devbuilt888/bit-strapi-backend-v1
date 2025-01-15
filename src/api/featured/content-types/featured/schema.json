@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featureds",
+  "info": {
+    "singularName": "featured",
+    "pluralName": "featureds",
+    "displayName": "Featured"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featuredTitle": {
+      "type": "string"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog.blog",
+      "inversedBy": "featureds"
+    }
+  }
+}

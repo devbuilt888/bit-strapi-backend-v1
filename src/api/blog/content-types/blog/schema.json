@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featuredTitle": {
+      "type": "string"
+    },
+    "featuredContent": {
+      "type": "richtext"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "blogs"
+    },
+    "preview": {
+      "type": "text",
+      "maxLength": 100
+    },
+    "featureds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::featured.featured",
+      "mappedBy": "blog"
+    },
+    "categoryPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "uid"
+    },
+    "p1Title": {
+      "type": "string"
+    },
+    "p2Title": {
+      "type": "string"
+    },
+    "p3Title": {
+      "type": "string"
+    },
+    "p4Title": {
+      "type": "string"
+    },
+    "p1Text": {
+      "type": "richtext"
+    },
+    "p2Text": {
+      "type": "richtext"
+    },
+    "p3Text": {
+      "type": "richtext"
+    },
+    "p4Text": {
+      "type": "richtext"
+    },
+    "specialText": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    }
+  }
+}
