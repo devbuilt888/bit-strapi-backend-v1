@@ -13,9 +13,7 @@
     "@strapi/plugin-users-permissions": "5.6.0",
     "@strapi/strapi": "5.6.0",
     "bcryptjs": "^2.4.3",
-    "better-sqlite3": "7.4.6",
-    "pg": "^8.13.1",
-    "pg-connection-string": "^2.7.0"
+    "better-sqlite3": "11.0.0"
   },
   "author": {
     "name": "A Strapi developer"
