@@ -1,8 +1,13 @@
+const path = require('path');
 const parse = require('pg-connection-string').parse;
 
 module.exports = ({ env }) => {
   if (env('NODE_ENV') === 'production') {
-    const config = parse(env('DATABASE_URL'));
+    const databaseUrl = env('DATABASE_URL', '');
+    if (!databaseUrl) {
+      throw new Error('DATABASE_URL environment variable is not set');
+    }
+    const config = parse(databaseUrl);
     return {
       connection: {
         client: 'postgres',
